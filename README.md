@@ -3,7 +3,6 @@ museumwebAPI
 Auckland University "Bob Doran's Museum of Computing"
 
 This is a project that focuses on the aspects of:
-
 Being able to develop a simple web application
 An understanding of HTML, CSS and JavaScript
 Being able to use Web APIs and consume data
