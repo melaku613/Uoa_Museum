@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/png" href="http://redsox.uoa.auckland.ac.nz/ms/logo-192x192.png"/>
+        <meta charset="UTF-8">
+        <title>Museum</title>
+        <link rel="stylesheet" href="mgel636.css">
+        <script type="text/javascript" src="mgel636.js"></script>
+
+    </head>
+    <body>
+        
+        <!-- This is the Navigation bar-->
+        <nav class="navbar">
+            <div class = "logo_div">
+                <img src =http://redsox.uoa.auckland.ac.nz/ms/logo.svg alt="" id = logo>
+            </div>
+            <div class = "menu">
+                <table>
+                    <tr>
+					    
+                        <td id="Home"  onclick="showHomeTab();">
+                            &#127968;
+							Home
+                        </td>
+                        <td id="Display" onclick="showDisplayTab();">
+                            &#128187;
+							Display
+                        </td>
+                        <td id="News" onclick="showNewsTab();">
+                            &#128240;
+							News
+                        </td>
+                        <td id="Shope"  onclick="showShopeTab();">
+                            &#127974;
+							Shope
+                        </td>
+                        <td id="Register"  onclick="showRegisterTab();">
+                            &#127915;
+							SignUp
+                        </td>
+                        <td id="Comments"  onclick="showCommentsTab();">
+                            &#128214;
+							FeedBack
+                        </td>
+                        <td id="login">
+                            <button class = "loginbutton" onclick="showpopup()" style="width:auto;">Log in</button>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </nav>
+        
+
+        <!-- This is the main section for each TaB-->
+   
+        <div id = "HomeContent"> 
+            <section>
+                <h1> The Bob Doran Musuem of computing</h1>
+                        <pre>  </pre>
+                        <p><font size="4">
+                        Welcome to our displays on the history of computing and computers.
+                        You might like to have a look at the history time line in the entrance corridor down below or visit one of the lobbies to the right for displays containing more detail.
+                        You can learn more about the displays here, where you can also see a list of the many topics that we cover.
+                        Enjoy! If you are intrigued by what you find here and live close to Auckland, or are visiting the city, please feel free to drop in to the department and see the displays for yourself. We are located at the University on Princes Street and are always open during normal office hours and also in the evenings and on the weekends when classes are in session.
+                        </p>
+            </section>    
+        </div>
+        
+        <div id= "DisplayContent">
+            <section> 
+                <h1> Display </h1>
+            </section>
+            <div class = "SearchBar">
+                <input  type="text" id = "myinput" placeholder = "Search..." onkeyup = "SearchFunction()" >
+            </div>
+
+            <div id = "DisplayContents"></div>
+        </div>
+
+
+        <div id = NewsContent>
+                
+                <h1> News</h1>
+            
+            
+            <div id= "NewsContents">
+            </div>
+           
+        </div>
+
+        <div id= "ShopeContent">
+            <section> 
+                <h1> Museum Shope </h1>
+            </section>
+            
+            <div class = "SearchBar">
+                <input  type="text" id = "myinputs" placeholder = "Search..." onkeyup = "shopeSearchFunction()" >
+            </div>
+
+            <div id = "ShopeContents"></div>
+           
+        </div>
+
+        <div id= "RegisterContent">
+                <h1> Join us! </h1>
+                <form>
+                    <div class="container">
+                            <p>Please fill in this form to create an account.</p>
+                            
+
+                            <label for="username"><b>UserName</b></label>
+                            <input type="text" placeholder="Enter UserName" id ="username" required>
+                            <hr>
+                            
+                            <label for="psw"><b>Password: </b></label>
+                            <input type="password" placeholder="Enter Password" id ="psw" required>
+                            <hr>
+                        
+                            
+                            <label for="Address"><b> Address  :</b></label>
+                            <input type="text" placeholder="Enter Address" id="Address" >
+                            
+                             
+                            <input type="button" value = "Register" class="registerbutton" onclick = "registersection()"></button>
+                            <div id="space">
+                            <label id = "thankyou"></label>
+                            </div>
+                    </div>
+                </form>
+        
+        </div>
+
+        
+            
+        <div id= "CommentContent">
+                <h1> Guest Book </h1>
+                <p>Please sign our guest Book. your comment is greatly appreciated!</p>
+            <section class="Space">
+                <form>
+                Name: <input id= "name"  type="text">
+                </form>
+                <br>
+                <textarea rows = "5" cols = "50" id = "textarea" type ="text" placeholder="Enter your Comment here...."></textarea>
+                <input type = "button" value = "submit" onclick= "commentsection()" ></button>  
+
+                <div>
+                <br></br><iframe width = "50%" height = "400"id= "scroll_bar" src = "http://redsox.uoa.auckland.ac.nz/ms/MuseumService.svc/htmlcomments" >
+                </iframe>
+                </div>
+                
+            </section>
+            
+        </div>
+        <div id="popup">
+            <div class = "popup-content">
+                
+                <span style='font-size:60px;'>&#128100;</span>
+                <input type="text" placeholder="UserName" id ="usr">
+                <input type="password" placeholder="Password" id = "pass">
+				<div id = "re"></div>
+                <table>
+                    <tr>
+                    
+                    <input type ="button" value ="Log in" class="loginbutton1" onclick = "login()"></button>
+                    <input type ="button" value ="Close"  class ="loginbutton1"  onclick = "showHomeTab()"></button>
+					
+                   
+                   
+                    </tr>
+                 </table>
+            </div>
+
+            
+
+			
+
+
+        
+        </body>
+        
+         
+       
+    </body>
+</html>

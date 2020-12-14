@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+/* Navigation */
+
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    height: 90px;
+    background: rgb(87, 49, 49);
+    border-bottom: 3px rgb(87, 49, 49);
+    list-style: none;     
+}
+.menu{
+    float: right
+}
+.space{
+    padding-left: 30px; 
+}
+
+.menu td{
+    float: left;
+    width: 100px;
+    height: 90px;
+    line-height: 70px;
+    text-align: center;
+    list-style: none;
+}
+
+
+.logo_div{
+    float: left;
+   
+}
+
+#logo{
+    
+    padding: 5px;
+    height: 80px;
+    width: 80px;
+}
+
+/* The body */
+body{
+    margin: 0;
+    background: #e4e0e0;
+            
+}
+.SearchBar input{
+    padding: 6px;
+    padding-right: 60px;
+    border: 1px solid rgb(82, 54, 54);
+    margin-top: 15px;
+    
+}
+.SearchBar{
+    padding-left: 6px;
+}
+
+
+
+h1{
+    border-bottom: 3px solid rgb(87, 49, 49);
+    padding: 10px;
+    
+
+}
+
+#HomeContent {
+    /*border-bottom: 5px solid #20262e;*/
+    padding: 10px;
+}
+.Space {
+    padding: 10px;
+}
+p,h3 {
+    padding: 5px;
+}
+
+
+.image{
+
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}
+#scroll_bar{
+    border: 3px solid rgb(22, 20, 20)
+}
+
+.container{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px 50px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #e4e0e0;
+    border: 3px solid  rgb(87, 49, 49);
+    height: 400px;
+    width: 600px;
+
+
+}
+.container input[type=text], input[type=password] {
+
+    width: 75%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid rgb(87, 49, 49);
+    background: #f1f1f1;
+  }
+
+  .registerbutton {
+
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 20px 20px;
+    cursor: pointer;
+    width: 50%;
+    
+  }
+
+  .buybutton {
+
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    border: 2px solid rgb(87, 49, 49);
+  }
+
+  /*registeration part*/
+  #thankyou{
+      color:solid rgb(87, 49, 49);
+  }
+  #space{
+    padding: 20px 0px;
+
+  }
+
+  .loginbutton{
+    background-color: #e4e0e0;;
+    width: 100%;
+    cursor: pointer;
+    color:  rgb(87, 49, 49);
+    padding: 10px 20px;
+    border-radius: 15px 50px;
+    border: 2px solid rgb(87, 49, 49);
+
+  }
+ 
+  #popup{
+      background: rgb(0, 0, 0, 0.7);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+	  top:0;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+
+  }
+  .popup-content{
+    background: #e4e0e0;
+    height: 250px;
+    width: 500px;
+    border-radius: 10px;
+    border: 3px solid  rgb(87, 49, 49);
+	padding: 10px 10px;
+
+
+  }
+
+  .popup-content input[type=text] {
+    width: 45%;
+    padding: 10px 10px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid rgb(87, 49, 49);
+    background: #f1f1f1;
+
+  }
+  #pass{
+    width: 45%;
+    padding: 10px 10px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid rgb(87, 49, 49);
+    background: #f1f1f1;
+
+  }
+
+  .loginbutton1{
+    background-color: rgb(87, 49, 49);
+    width: 50%;
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: #e4e0e0;
+  }
+  
+
+  #closebutton{
+    background-color: rgb(87, 49, 49);
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #e4e0e0;
+  }
+ 
+ 
